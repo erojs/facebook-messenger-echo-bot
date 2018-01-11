@@ -3,9 +3,9 @@ let bodyParser = require('body-parser')
 let request = require('request')
 let app = express()
 
-const FACEBOOK_ACCESS_TOKEN = 'Your_Facebook_Access_Token'
+const FACEBOOK_ACCESS_TOKEN = 'EAACSdJdw7RQBAIw5HsXxgVNMjkjkhPJK6hs5DTNkSWILtm8UiYxUCeMIleAFPibv0TAntlb9CIuv3zivAkAdZBLYGjXF2VQHFi25MTs6OGlKKyKvkWUZBZAZC239iB8DZCghSWO3lZBMYcQ8sjYZBUtMoOvnZB5i4ZBZBr7xFS1bJVVg7JuX1It4zK'
 const PORT = process.env.PORT || 3000
-const VERIFY_TOKEN = 'Your_Verify_Token'
+const VERIFY_TOKEN = 'myToken' // 識別傳進來的訊息，是不是chatBot傳過來的
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
